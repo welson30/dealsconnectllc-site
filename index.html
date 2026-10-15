@@ -251,6 +251,8 @@
     display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; color:rgba(255,255,255,.5);
   }
 
+  footer a{color:inherit; text-decoration:underline; text-underline-offset:4px; transition:color .2s;}
+  footer a:hover{color:#fff;}
   .rv{opacity:0; transform:translateY(30px); transition:opacity .9s var(--ease), transform .9s var(--ease); transition-delay:calc(var(--d,0) * 1ms);}
   .rv.in{opacity:1; transform:none;}
 
@@ -444,6 +446,7 @@
       <span>© 2026 Deals Connect LLC · Florida, USA</span>
       <span>My30A Host and PaidPrime are trade names (DBAs) of Deals Connect LLC.</span>
       <span>Nothing here is investment advice.</span>
+      <a href="/privacy">Privacy policy</a>
     </footer>
   </div>
 </section>
