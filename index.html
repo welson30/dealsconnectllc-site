@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deals Connect LLC — Holding company</title>
+<meta name="description" content="Deals Connect LLC is the holding company behind My30A Host and PaidPrime: independent software brands, each with its own site and pricing.">
+<meta name="theme-color" content="#07111F">
+<link rel="canonical" href="https://dealsconnectllc.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Deals Connect LLC">
+<meta property="og:title" content="Deals Connect LLC — Holding company">
+<meta property="og:description" content="The holding company behind My30A Host and PaidPrime: independent software brands, each with its own site and pricing.">
+<meta property="og:url" content="https://dealsconnectllc.com/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 26'%3E%3Ccircle cx='13' cy='13' r='11' fill='none' stroke='%23E0A93B' stroke-width='3'/%3E%3Ccircle cx='25' cy='13' r='11' fill='none' stroke='%234F7DFF' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --midnight:#07111F;
+    --gold:#F2C879;
+    --blue:#4F7DFF;
+    --blue-soft:#8FB0FF;
+    --slate:#E4E9EE;
+    --ink:#0B1B33;
+    --soft:#51607A;
+    --max:1180px;
+    --ease:cubic-bezier(.2,.8,.2,1);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--slate); color:var(--ink);
+    font-family:'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  a{color:inherit;}
+  button{font:inherit; color:inherit;}
+  ::selection{background:var(--gold); color:var(--midnight);}
+  :focus-visible{outline:3px solid var(--gold); outline-offset:3px; border-radius:8px;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
+  .mono{font-family:'JetBrains Mono', ui-monospace, monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase;}
+  h1,h2,h3{font-family:'Bricolage Grotesque', sans-serif; margin:0;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative; overflow:hidden; isolation:isolate;
+    min-height:78svh; background:var(--midnight); color:#fff;
+    border-radius:0 0 56px 56px;
+    display:flex; align-items:center;
+    padding:150px 0 100px;
+  }
+  .hero::after{
+    content:""; position:absolute; inset:0; z-index:1; pointer-events:none;
+    background:radial-gradient(520px circle at var(--hx,50%) var(--hy,35%), rgba(242,200,121,.11), transparent 60%);
+  }
+  .orb{position:absolute; border-radius:50%; filter:blur(90px); z-index:0; will-change:transform;}
+  .orb.o1{width:620px; height:620px; left:-160px; top:-120px; background:#2B54D8; opacity:.5; animation:drift1 16s ease-in-out infinite;}
+  .orb.o2{width:520px; height:520px; right:-140px; top:40px; background:var(--gold); opacity:.26; animation:drift2 19s ease-in-out infinite;}
+  .orb.o3{width:480px; height:480px; left:36%; bottom:-220px; background:#5B8CFF; opacity:.22; animation:drift1 22s ease-in-out infinite reverse;}
+  @keyframes drift1{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(70px,50px) scale(1.12);}}
+  @keyframes drift2{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(-80px,60px) scale(.92);}}
+  .dots{
+    position:absolute; inset:0; z-index:0;
+    background-image:radial-gradient(rgba(255,255,255,.16) 1px, transparent 1.2px);
+    background-size:30px 30px;
+    -webkit-mask-image:radial-gradient(ellipse at 50% 40%, #000 20%, transparent 72%);
+            mask-image:radial-gradient(ellipse at 50% 40%, #000 20%, transparent 72%);
+  }
+  .nav{
+    position:absolute; top:0; left:0; right:0; z-index:5;
+    display:flex; justify-content:space-between; align-items:center;
+    max-width:var(--max); margin:0 auto; padding:30px 28px;
+  }
+  .logo{display:flex; align-items:center; gap:12px; text-decoration:none; font-family:'Bricolage Grotesque',sans-serif; font-weight:600; font-size:18px; letter-spacing:-.01em;}
+  .nav-links{display:flex; gap:28px;}
+  .nav-links a{text-decoration:none; font-size:14px; color:rgba(255,255,255,.72); transition:color .2s;}
+  .nav-links a:hover{color:#fff;}
+  .hero-inner{position:relative; z-index:2; width:100%;}
+  .pill{
+    display:inline-flex; align-items:center; gap:10px; padding:8px 14px 8px 12px;
+    border:1px solid rgba(255,255,255,.2); border-radius:999px; background:rgba(255,255,255,.06);
+    backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+    color:rgba(255,255,255,.85);
+  }
+  .live-dot{width:8px; height:8px; border-radius:50%; background:var(--gold); position:relative; flex:none;}
+  .live-dot::after{content:""; position:absolute; inset:-5px; border-radius:50%; border:1.5px solid var(--gold); animation:pulse 2s ease-out infinite;}
+  @keyframes pulse{0%{transform:scale(.5); opacity:.9;}100%{transform:scale(1.8); opacity:0;}}
+  h1{
+    font-size:clamp(46px, 8.4vw, 118px); line-height:.96; letter-spacing:-.035em; font-weight:700;
+    margin:28px 0 30px; max-width:11.5em;
+  }
+  .ln{display:block; overflow:hidden; padding:.06em 0 .1em; margin-bottom:-.06em;}
+  .ln > span{display:block; transform:translateY(112%); animation:rise 1s var(--ease) forwards; animation-delay:calc(var(--d) * 130ms + 250ms);}
+  @keyframes rise{to{transform:translateY(0);}}
+  h1 em{
+    font-style:normal;
+    background:linear-gradient(90deg, var(--gold), var(--blue-soft)); -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .lead{font-size:clamp(17px, 1.7vw, 21px); line-height:1.55; color:rgba(255,255,255,.72); max-width:34em; margin:0 0 38px;}
+  .fade{opacity:0; transform:translateY(16px); animation:fadeUp .9s var(--ease) forwards; animation-delay:calc(var(--d) * 1ms);}
+  @keyframes fadeUp{to{opacity:1; transform:none;}}
+  .actions{display:flex; gap:14px; flex-wrap:wrap;}
+  .btn{
+    display:inline-flex; align-items:center; gap:10px; text-decoration:none;
+    padding:16px 26px; border-radius:999px; font-weight:600; font-size:15px;
+    transition:transform .25s var(--ease), box-shadow .25s var(--ease), background .25s;
+  }
+  .btn-gold{background:var(--gold); color:var(--midnight); box-shadow:0 10px 30px -10px rgba(242,200,121,.6);}
+  .btn-gold:hover{transform:translateY(-3px); box-shadow:0 18px 36px -10px rgba(242,200,121,.7);}
+  .btn-ghost{border:1px solid rgba(255,255,255,.3); color:#fff;}
+  .btn-ghost:hover{background:rgba(255,255,255,.1); transform:translateY(-3px);}
+  .scroll-cue{
+    position:absolute; left:50%; bottom:34px; z-index:2; transform:translateX(-50%);
+    display:flex; flex-direction:column; align-items:center; gap:10px; color:rgba(255,255,255,.5);
+  }
+  .scroll-cue i{display:block; width:1px; height:44px; background:linear-gradient(rgba(255,255,255,.7), transparent); transform-origin:top; animation:cue 2.2s ease-in-out infinite;}
+  @keyframes cue{0%{transform:scaleY(0);}50%{transform:scaleY(1);}100%{transform:scaleY(1); opacity:0;}}
+
+  /* ---------- PORTFOLIO ---------- */
+  .portfolio{padding:100px 0 40px;}
+  .section-head{margin-bottom:48px;}
+  .eyebrow{color:var(--soft); margin-bottom:18px; display:flex; align-items:center; gap:12px;}
+  .eyebrow::before{content:""; width:28px; height:2px; background:linear-gradient(90deg,var(--gold),var(--blue));}
+  h2{font-size:clamp(34px, 5vw, 62px); line-height:1.02; letter-spacing:-.03em; font-weight:700; max-width:14em;}
+
+  /* shared panel layout */
+  .panel{
+    position:relative; isolation:isolate; overflow:hidden;
+    border-radius:44px; padding:64px; margin-bottom:28px; min-height:660px;
+    display:grid; grid-template-columns:.95fr 1.05fr; gap:48px; align-items:center;
+  }
+  .panel > *{position:relative; z-index:2; min-width:0;}
+  .panel::before, .panel::after{content:""; position:absolute; inset:0; z-index:0; pointer-events:none;}
+
+  /* visual carousel */
+  .shots{display:flex; flex-direction:column; gap:20px;}
+  .stage{position:relative; height:clamp(380px, 42vw, 560px);}
+  .shot{
+    position:absolute; inset:0; width:100%; height:100%; object-fit:contain;
+    opacity:0; transform:scale(.97) translateY(8px); pointer-events:none;
+    transition:opacity .3s ease, transform .3s ease;
+    -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%), linear-gradient(180deg, transparent 0, #000 6%, #000 93%, transparent 100%);
+            mask-image:linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%), linear-gradient(180deg, transparent 0, #000 6%, #000 93%, transparent 100%);
+    -webkit-mask-composite:source-in; mask-composite:intersect;
+  }
+  .shot.on{opacity:1; transform:none; animation:float 7s ease-in-out infinite; transition:opacity .8s ease .28s, transform .9s var(--ease) .28s;}
+  @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+  .tabs{display:flex; flex-wrap:wrap; gap:8px; justify-content:center;}
+  .tab{cursor:pointer; padding:8px 14px; border-radius:999px; font-size:13px; font-weight:500; background:transparent; transition:background .25s, color .25s, border-color .25s;}
+
+  /* ===== My30A Host panel: cream, navy, gold, serif ===== */
+  .p-my30a{background:#F7F2EA; color:#0F1B2D; box-shadow:0 50px 90px -60px rgba(15,27,45,.5);}
+  .p-my30a::before{background:radial-gradient(560px circle at 0% 100%, rgba(200,150,60,.13), transparent 62%);}
+  .p-my30a .kicker{display:flex; align-items:center; gap:14px; font-weight:600; font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:#B07F2A;}
+  .p-my30a .kicker::before{content:""; width:34px; height:1.5px; background:#B07F2A;}
+  .p-my30a h3{font-family:'Cormorant Garamond', serif; font-weight:700; font-size:clamp(54px, 6.4vw, 92px); line-height:.92; letter-spacing:-.02em; margin:20px 0 10px;}
+  .p-my30a .tagline{font-family:'Cormorant Garamond', serif; font-weight:500; font-size:clamp(26px, 3vw, 38px); line-height:1.1; margin:0 0 22px;}
+  .p-my30a .tagline em{font-style:italic; font-weight:600; background:linear-gradient(90deg,#BE8F35,#9A6A1E); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .p-my30a .desc{margin:0 0 26px; font-size:17px; line-height:1.6; color:#5B6475; max-width:30em;}
+  .ticks{list-style:none; margin:0 0 34px; padding:0; display:grid; gap:13px;}
+  .ticks li{display:flex; align-items:center; gap:12px; font-size:16px; color:#1A2638;}
+  .ck{flex:none; width:24px; height:24px; border-radius:50%; background:#0F1B2D; display:grid; place-items:center;}
+  .btn-navy{background:#0F1B2D; color:#fff; box-shadow:0 14px 30px -12px rgba(15,27,45,.55);}
+  .btn-navy:hover{transform:translateY(-3px); box-shadow:0 20px 34px -12px rgba(15,27,45,.6);}
+  .p-my30a .tab{border:1px solid rgba(15,27,45,.2); color:#0F1B2D;}
+  .p-my30a .tab:hover{border-color:#0F1B2D;}
+  .p-my30a .tab.on{background:#0F1B2D; border-color:#0F1B2D; color:#F7F2EA;}
+
+  /* ===== PaidPrime panel: near-black, blue, green money ===== */
+  .p-paid{
+    grid-template-columns:1.05fr .95fr;
+    background:#0B0C0E; color:#fff; font-family:'Outfit', sans-serif;
+    border:1px solid rgba(255,255,255,.08); box-shadow:0 50px 90px -60px rgba(7,17,31,.9);
+  }
+  .p-paid .shots{order:-1;}
+  .p-paid::before{background:radial-gradient(620px circle at 100% 0%, rgba(79,125,255,.2), transparent 62%);}
+  .p-paid::after{
+    background-image:linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size:52px 52px;
+    -webkit-mask-image:radial-gradient(ellipse at 88% 18%, #000 5%, transparent 55%);
+            mask-image:radial-gradient(ellipse at 88% 18%, #000 5%, transparent 55%);
+  }
+  .p-paid .kicker{
+    display:inline-flex; align-items:center; gap:10px; padding:8px 14px; border-radius:999px;
+    border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.04);
+    font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--blue-soft);
+  }
+  .p-paid .kicker::before{content:""; width:6px; height:6px; border-radius:50%; background:var(--blue);}
+  .p-paid h3{font-family:'Outfit', sans-serif; font-weight:600; font-size:clamp(46px, 5.6vw, 80px); line-height:1; letter-spacing:-.035em; margin:22px 0 10px;}
+  .p-paid .tagline{font-weight:500; font-size:clamp(24px, 2.7vw, 34px); line-height:1.15; letter-spacing:-.02em; margin:0 0 20px; color:rgba(255,255,255,.92);}
+  .p-paid .tagline b{font-weight:600; color:var(--blue);}
+  .p-paid .desc{margin:0 0 22px; font-size:17px; line-height:1.6; color:rgba(255,255,255,.62); max-width:30em;}
+  .chips{display:flex; flex-wrap:wrap; gap:9px; margin:0 0 32px; padding:0; list-style:none;}
+  .chips li{padding:9px 15px; border-radius:999px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.04); font-size:14px; color:rgba(255,255,255,.72);}
+  .btn-blue{background:var(--blue); color:#fff; box-shadow:0 14px 36px -10px rgba(79,125,255,.6);}
+  .btn-blue:hover{transform:translateY(-3px); box-shadow:0 20px 40px -10px rgba(79,125,255,.7);}
+  .secure{display:flex; align-items:center; gap:9px; margin-top:22px; font-size:14px; color:rgba(255,255,255,.45);}
+  .p-paid .tab{border:1px solid rgba(255,255,255,.14); color:rgba(255,255,255,.7);}
+  .p-paid .tab:hover{border-color:rgba(255,255,255,.4); color:#fff;}
+  .p-paid .tab.on{background:var(--blue); border-color:var(--blue); color:#fff;}
+
+  /* ---------- COMING SOON ---------- */
+  @property --a{syntax:'<angle>'; inherits:false; initial-value:0deg;}
+  .soon-row{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+  .soon{
+    position:relative; min-height:200px; padding:32px; border-radius:32px; border:1.5px solid transparent;
+    background:
+      linear-gradient(#F4F7F9,#F4F7F9) padding-box,
+      conic-gradient(from var(--a), rgba(11,27,51,.12) 0 62%, var(--gold) 80%, var(--blue) 92%, rgba(11,27,51,.12)) border-box;
+    animation:spin 7s linear infinite;
+    display:flex; flex-direction:column; justify-content:space-between;
+  }
+  @keyframes spin{to{--a:360deg;}}
+  .soon-top{display:flex; align-items:center; justify-content:space-between; color:var(--soft);}
+  .soon-label{display:flex; align-items:center; gap:12px; font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:28px; letter-spacing:-.02em;}
+  .bars{display:grid; gap:9px; margin-top:22px;}
+  .bars i{display:block; height:9px; border-radius:6px; background:linear-gradient(90deg, #DCE3E9 25%, #EEF2F5 50%, #DCE3E9 75%); background-size:300% 100%; animation:shimmer 2.6s linear infinite;}
+  .bars i:nth-child(1){width:62%;} .bars i:nth-child(2){width:38%; animation-delay:.3s;}
+  @keyframes shimmer{to{background-position:-300% 0;}}
+
+  /* ---------- HOW ---------- */
+  .how{padding:120px 0 0;}
+  .how-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:44px; margin-top:44px;}
+  .how-item{border-top:1px solid rgba(11,27,51,.18); padding-top:24px;}
+  .how-item .mk{width:14px; height:14px; border-radius:50%; background:linear-gradient(135deg,var(--gold),var(--blue)); margin-bottom:20px;}
+  .how-item h3{font-size:23px; letter-spacing:-.02em; margin-bottom:10px;}
+  .how-item p{margin:0; color:var(--soft); line-height:1.6; font-size:16.5px;}
+
+  /* ---------- CONTACT ---------- */
+  .contact{
+    position:relative; overflow:hidden; isolation:isolate; margin-top:130px;
+    background:var(--midnight); color:#fff; border-radius:56px 56px 0 0; padding:120px 0 0;
+  }
+  .contact .orb.o1{width:460px; height:460px; left:-120px; top:-140px; opacity:.45;}
+  .contact .orb.o2{width:420px; height:420px; right:-120px; bottom:-60px; opacity:.22;}
+  .contact .wrap{position:relative; z-index:2;}
+  .contact .eyebrow{color:rgba(255,255,255,.6);}
+  .contact h2{max-width:11em;}
+  .mail{
+    display:inline-block; margin-top:34px; text-decoration:none; font-family:'Bricolage Grotesque', sans-serif; font-weight:600;
+    font-size:clamp(22px, 3.6vw, 42px); letter-spacing:-.02em; padding-bottom:6px;
+    background:linear-gradient(90deg,var(--gold),var(--blue-soft)) left bottom / 100% 2px no-repeat;
+    transition:background-size .4s var(--ease), color .3s;
+  }
+  .mail:hover{background-size:100% 100%; color:var(--midnight);}
+  footer{
+    position:relative; z-index:2; margin-top:110px; padding:26px 0 40px; border-top:1px solid rgba(255,255,255,.12);
+    display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; color:rgba(255,255,255,.5);
+  }
+
+  .rv{opacity:0; transform:translateY(30px); transition:opacity .9s var(--ease), transform .9s var(--ease); transition-delay:calc(var(--d,0) * 1ms);}
+  .rv.in{opacity:1; transform:none;}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:980px){
+    .panel, .p-paid{grid-template-columns:1fr; gap:36px; padding:48px 36px; min-height:0;}
+    .p-paid .shots{order:2;}
+    .stage{height:clamp(340px, 70vw, 520px);}
+    .soon-row{grid-template-columns:1fr;}
+    .how-grid{grid-template-columns:1fr; gap:32px;}
+    .portfolio{padding-top:100px;}
+  }
+  @media (max-width:640px){
+    .wrap{padding:0 20px;}
+    .nav{padding:24px 20px;}
+    .nav-links{gap:18px;}
+    .hero{border-radius:0 0 34px 34px; padding:130px 0 110px;}
+    .contact{border-radius:34px 34px 0 0;}
+    .panel, .p-paid{padding:34px 24px; border-radius:30px;}
+    .soon{padding:26px;}
+    .scroll-cue{display:none;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    *,*::before,*::after{animation:none !important; transition:none !important;}
+    .ln > span, .fade, .rv{opacity:1 !important; transform:none !important;}
+  }
+</style>
+<noscript><style>.rv{opacity:1;transform:none;}</style></noscript>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+  <div class="dots"></div>
+
+  <nav class="nav" aria-label="Main">
+    <a class="logo" href="#top" aria-label="Deals Connect LLC">
+      <svg width="38" height="26" viewBox="0 0 38 26" fill="none" aria-hidden="true">
+        <circle cx="13" cy="13" r="11" stroke="#F2C879" stroke-width="2"/>
+        <circle cx="25" cy="13" r="11" stroke="#8FB0FF" stroke-width="2"/>
+      </svg>
+      Deals Connect
+    </a>
+    <div class="nav-links">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="wrap hero-inner">
+    <span class="pill mono fade" style="--d:100"><i class="live-dot"></i>Holding company · Florida, USA</span>
+    <h1>
+      <span class="ln"><span style="--d:0">Software brands,</span></span>
+      <span class="ln"><span style="--d:1">built to stand</span></span>
+      <span class="ln"><span style="--d:2">on their <em>own.</em></span></span>
+    </h1>
+    <p class="lead fade" style="--d:900">Deals Connect LLC is the company behind My30A Host and PaidPrime. Each brand runs under its own name, site, and pricing.</p>
+    <div class="actions fade" style="--d:1050">
+      <a class="btn btn-gold" href="#portfolio">See the portfolio
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v11M3 9l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+
+  <div class="scroll-cue mono" aria-hidden="true"><span>Scroll</span><i></i></div>
+</header>
+
+<main>
+  <section class="portfolio" id="portfolio">
+    <div class="wrap">
+      <div class="section-head rv">
+        <div class="eyebrow mono">Portfolio</div>
+        <h2>Two brands live. More on the way.</h2>
+      </div>
+
+      <!-- MY30A HOST -->
+      <article class="panel p-my30a rv" aria-labelledby="t-my30a">
+        <div class="copy">
+          <div class="kicker">Hospitality · 30A, Florida</div>
+          <h3 id="t-my30a">My30A Host</h3>
+          <p class="tagline">Before you arrive, <em>everything is ready.</em></p>
+          <p class="desc">An AI concierge for vacation-rental guests on 30A, and a system that lets hosts offer it at their property.</p>
+          <ul class="ticks">
+            <li><span class="ck"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.3l2.4 2.4 4.6-5" stroke="#E7B65C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Book airport transfers and grocery stocking</li>
+            <li><span class="ck"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.3l2.4 2.4 4.6-5" stroke="#E7B65C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Ask Vitória by text or real-time voice</li>
+            <li><span class="ck"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.3l2.4 2.4 4.6-5" stroke="#E7B65C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Browse the Explore 30A guide and events</li>
+            <li><span class="ck"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.3l2.4 2.4 4.6-5" stroke="#E7B65C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Track your orders with live notifications</li>
+          </ul>
+          <a class="btn btn-navy" href="https://www.my30ahost.com/" target="_blank" rel="noopener noreferrer">Open my30ahost.com
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="shots">
+          <div class="stage">
+            <img class="shot on" src="assets/m-overview.webp" alt="My30A Host app: concierge chat, services, and Explore 30A">
+            <img class="shot" src="assets/m-vitoria.webp" alt="My30A Host app: chatting with Vitória, the AI concierge">
+            <img class="shot" src="assets/m-grocery.webp" alt="My30A Host app: ordering groceries before arrival">
+            <img class="shot" src="assets/m-airport.webp" alt="My30A Host app: booking an airport transfer">
+            <img class="shot" src="assets/m-dining.webp" alt="My30A Host app: dining guide for 30A">
+            <img class="shot" src="assets/m-events.webp" alt="My30A Host app: events on 30A">
+          </div>
+          <div class="tabs" role="group" aria-label="My30A Host screens">
+            <button class="tab on" type="button" aria-pressed="true">The app</button>
+            <button class="tab" type="button" aria-pressed="false">Vitória</button>
+            <button class="tab" type="button" aria-pressed="false">Groceries</button>
+            <button class="tab" type="button" aria-pressed="false">Transfers</button>
+            <button class="tab" type="button" aria-pressed="false">Dining</button>
+            <button class="tab" type="button" aria-pressed="false">Events</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PAIDPRIME -->
+      <article class="panel p-paid rv" aria-labelledby="t-paid">
+        <div class="copy">
+          <div class="kicker">Fintech · Dividend alerts</div>
+          <h3 id="t-paid">PaidPrime</h3>
+          <p class="tagline">Know the moment <b>you’re paid.</b></p>
+          <p class="desc">Real-time alerts the moment a dividend lands, plus portfolio, calendar, and income tracking. Free for up to 5 holdings.</p>
+          <ul class="chips">
+            <li>Portfolio Tracking</li><li>Dividend Alerts</li><li>Passive Income</li><li>AI Advisor</li><li>Goals</li><li>Analytics</li>
+          </ul>
+          <a class="btn btn-blue" href="https://www.paidprime.com/" target="_blank" rel="noopener noreferrer">Visit paidprime.com
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="secure">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1.5l5 2v4c0 3-2.1 5.6-5 6.5-2.9-.9-5-3.5-5-6.5v-4l5-2z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+            Read-only broker access · Bank-grade encryption
+          </div>
+        </div>
+
+        <div class="shots">
+          <div class="stage">
+            <img class="shot on" src="assets/p-phone.webp" alt="PaidPrime lock screen with dividend notifications">
+            <img class="shot" src="assets/p-dash.webp" alt="PaidPrime investment dashboard">
+          </div>
+          <div class="tabs" role="group" aria-label="PaidPrime screens">
+            <button class="tab on" type="button" aria-pressed="true">Alerts</button>
+            <button class="tab" type="button" aria-pressed="false">Dashboard</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- COMING SOON -->
+      <div class="soon-row">
+        <div class="soon rv" style="--d:0" role="img" aria-label="Coming soon">
+          <div class="soon-top mono"><span>Reserved</span></div>
+          <div>
+            <div class="soon-label"><i class="live-dot"></i>Coming soon</div>
+            <div class="bars"><i></i><i></i></div>
+          </div>
+        </div>
+        <div class="soon rv" style="--d:140" role="img" aria-label="Coming soon">
+          <div class="soon-top mono"><span>Reserved</span></div>
+          <div>
+            <div class="soon-label"><i class="live-dot"></i>Coming soon</div>
+            <div class="bars"><i></i><i></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how">
+    <div class="wrap">
+      <div class="rv">
+        <div class="eyebrow mono">How we operate</div>
+        <h2>One company. Separate brands.</h2>
+      </div>
+      <div class="how-grid">
+        <div class="how-item rv" style="--d:0"><div class="mk"></div><h3>Independent by design</h3><p>Every brand has its own site, pricing, and customer support.</p></div>
+        <div class="how-item rv" style="--d:120"><div class="mk"></div><h3>One company behind them</h3><p>Deals Connect LLC holds and operates the brands under their own names.</p></div>
+        <div class="how-item rv" style="--d:240"><div class="mk"></div><h3>Added when ready</h3><p>New brands join the portfolio when they are built, not before.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="contact" id="contact">
+  <div class="orb o1"></div><div class="orb o2"></div>
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow mono">Contact</div>
+      <h2>For partnerships and press.</h2>
+      <a class="mail" href="mailto:dealsconnectllc@gmail.com">dealsconnectllc@gmail.com</a>
+    </div>
+    <footer class="mono">
+      <span>© 2026 Deals Connect LLC · Florida, USA</span>
+      <span>My30A Host and PaidPrime are trade names (DBAs) of Deals Connect LLC.</span>
+      <span>Nothing here is investment advice.</span>
+    </footer>
+  </div>
+</section>
+
+<script>
+(function(){
+  var rv = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:0.12});
+    rv.forEach(function(el){ io.observe(el); });
+  } else {
+    rv.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('.shots').forEach(function(box){
+    var slides = [].slice.call(box.querySelectorAll('.shot'));
+    var tabs = [].slice.call(box.querySelectorAll('.tab'));
+    var i = 0, timer = null;
+    function go(n){
+      i = (n + slides.length) % slides.length;
+      slides.forEach(function(s,k){ s.classList.toggle('on', k === i); });
+      tabs.forEach(function(t,k){ t.classList.toggle('on', k === i); t.setAttribute('aria-pressed', k === i ? 'true' : 'false'); });
+    }
+    function start(){ if (reduce || timer) return; timer = setInterval(function(){ go(i + 1); }, 3800); }
+    function stop(){ clearInterval(timer); timer = null; }
+    tabs.forEach(function(t,k){ t.addEventListener('click', function(){ go(k); stop(); start(); }); });
+    box.addEventListener('mouseenter', stop);
+    box.addEventListener('mouseleave', start);
+    box.addEventListener('focusin', stop);
+    box.addEventListener('focusout', start);
+    start();
+  });
+
+  var hero = document.querySelector('.hero');
+  hero.addEventListener('pointermove', function(e){
+    var r = hero.getBoundingClientRect();
+    hero.style.setProperty('--hx', (e.clientX - r.left) + 'px');
+    hero.style.setProperty('--hy', (e.clientY - r.top) + 'px');
+  });
+})();
+</script>
+</body>
+</html>
